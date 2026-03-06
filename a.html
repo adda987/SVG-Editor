@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proiect Multimedia - Sfetcu Andreea Daniela</title>
+    <link rel="stylesheet" href="6_1095_SFETCU_ANDREEA_DANIELA.css">
+</head>
+<body>
+
+    <div class="toolbar">
+        <div class="grup">
+            <label>Instrumente:</label>
+            <button id="selectie" class="activ">Selectie</button>
+            <button id="linie">Linie</button>
+            <button id="dreptunghi">Dreptunghi</button>
+            <button id="elipsa">Elipsa</button>
+        </div>
+
+        <div class="grup">
+            <label>Stil:</label>
+            <input type="color" id="contur" value="#1E90FF" title="Contur">
+            <input type="color" id="umplere" value="#FFC0CB" title="Umplere">
+            <input type="number" id="grosime" value="3" min="1" max="20" title="Grosime">
+        </div>
+
+        <div class="grup">
+            <label>Actiuni:</label>
+            <button id="undo">Undo</button>
+            <button id="sterge">Sterge</button>
+            <button id="salveaza">Salveaza</button>
+            <button id="export">Export PNG</button>
+        </div>
+    </div>
+
+    <div class="desen">
+        <svg id="svg" xmlns="http://www.w3.org/2000/svg"></svg>
+    </div>
+
+    <script src="6_1095_SFETCU_ANDREEA_DANIELA.js"></script>
+</body>
+</html>

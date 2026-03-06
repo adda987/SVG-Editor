@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #eef7fa; 
+    overflow: hidden;
+}
+
+
+.toolbar {
+    background-color: #2196F3; 
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 2px 10px rgba(0, 100, 200, 0.2); 
+    border-bottom: 2px solid #1976D2; 
+    z-index: 10;
+    flex-shrink: 0; 
+}
+
+.grup {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-right: 1px solid rgba(255, 255, 255, 0.3); 
+    padding-right: 20px;
+}
+.grup:last-child {
+    border-right: none;
+}
+
+
+label {
+    font-size: 11px;
+    margin-right: 8px;
+    color: #e3f2fd;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+button {
+    padding: 6px 14px;
+    cursor: pointer;
+    background-color: #1976D2; 
+    color: white;
+    border: 1px solid #1565C0;
+    border-radius: 4px;
+    font-size: 13px;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+
+button.activ {
+    background-color: #1976D2 !important;
+    color: #ffffff !important; 
+}
+
+
+#undo {
+    background-color: #FFC107; 
+    border-color: #FFA000;
+    color: #333; 
+}
+
+#sterge {
+    background-color: #F44336;
+    border-color: #D32F2F;
+}
+
+#salveaza {
+    background-color: #4CAF50; 
+    border-color: #388E3C;
+}
+
+
+input[type="number"] {
+    width: 45px;
+    padding: 4px;
+    border-radius: 3px;
+    border: 1px solid #90CAF9;
+    text-align: center;
+    background-color: #E3F2FD; 
+    color: #0d47a1;
+    font-weight: bold;
+}
+
+input[type="color"] {
+    border: 2px solid rgba(255,255,255,0.7);
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+    padding: 0;
+    background: none;
+    border-radius: 5px;
+}
+
+.desen {
+    flex-grow: 1;
+    background-color: white; 
+    padding: 0; 
+    display: block; 
+    position: relative; 
+}
+
+#svg {
+    display: block;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
